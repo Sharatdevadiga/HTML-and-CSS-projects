@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive table</title>
+    <style>
+      :root {
+        --main-clr: #7c3aed;
+        --main-clr-tint1: #d8b4fe;
+        --main-clr-tint2: #f5f3ff;
+        --shadow-clr: #e2e8f0;
+      }
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: sans-serif;
+        line-height: 1.5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      table {
+        margin-top: 100px;
+        border-collapse: collapse;
+
+        width: 80%;
+        max-width: 1000px;
+        min-width: 300px;
+        text-align: left;
+        font-size: 20px;
+        box-shadow: 0 0 36px var(--shadow-clr);
+      }
+      th,
+      td {
+        padding: 12px 24px;
+      }
+      thead th {
+        background: linear-gradient(
+          var(--main-clr) 0%,
+          var(--main-clr) 50%,
+          var(--main-clr-tint1)
+        );
+        color: white;
+      }
+      tr:nth-child(even) {
+        background-color: var(--main-clr-tint2);
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>product</th>
+          <th>dimension-1</th>
+          <th>dimension-2</th>
+          <th>dimension-3</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>width</th>
+          <td>100 cm</td>
+          <td>50 cm</td>
+          <td>200cm</td>
+        </tr>
+        <tr>
+          <th>Height</th>
+          <td>150 cm</td>
+          <td>100 cm</td>
+          <td>250 cm</td>
+        </tr>
+        <tr>
+          <th>Depth</th>
+          <td>50 cm</td>
+          <td>60 cm</td>
+          <td>100 cm</td>
+        </tr>
+        <tr>
+          <th>Weight</th>
+          <td>10 kg</td>
+          <td>15 kg</td>
+          <td>9 kg</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
