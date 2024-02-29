@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>product-landing-page</title>
+    <link href="styles.css" rel="stylesheet" />
+    <link href="media.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header grid grid-2-cols grid-center-h" id="header">
+      <!-- logo -->
+      <div class="logo-box flex-h flex-center">
+        <img
+          class="header-img"
+          id="header-img"
+          src="/images/logo.png"
+          alt="logo"
+        />
+        <p class="logo-text">Velocity Bikes</p>
+      </div>
+      <!-- navigation bar -->
+      <div>
+        <nav class="nav-bar flex-h" id="nav-bar">
+          <a href="#features" class="nav-link">Features</a>
+          <a href="#price" class="nav-link">price</a>
+          <a href="#cta" class="nav-link">Ride your Adventure</a>
+        </nav>
+      </div>
+    </header>
+    <!-- ----------------------------------- -->
+    <!-- hero section -->
+    <!-- ----------------------------------- -->
+    <section class="section-hero">
+      <div class="container grid grid-2-cols hero-box">
+        <figure>
+          <img
+            class="hero-img"
+            src="/images/hero image- bicycle.avif"
+            alt="bicycle image"
+          />
+        </figure>
+        <div class="hero-text container">
+          <h1 class="heading-primary">
+            Ride Into Adventure: Discover Your Perfect Bicycle at Unbeatable
+            Prices!
+          </h1>
+          <p class="hero-descreption para">
+            "Discover cycling excellence at Velocity bikes. Explore our premium
+            collection for style, comfort, and top-notch performance. Elevate
+            your ride with cutting-edge design. Find your dream bicycle and
+            start your adventure now!"
+          </p>
+          <a href="#cta" class="nav-link">Ride your Adventure</a>
+        </div>
+      </div>
+    </section>
+    <!-- --------------------------------------- -->
+    <!-- features section -->
+    <!-- --------------------------------------- -->
+    <section class="section-features" id="features">
+      <div class="container">
+        <h2 class="heading-secondary margin-md center">
+          We elevate Your Ride with:
+        </h2>
+        <!-- features  -->
+        <div class="features-box grid grid-3-cols margin-md">
+          <!-- -->
+
+          <!-- feature1 -->
+          <div class="feature flex-v">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="36"
+              height="36"
+              fill="#191919"
+              viewBox="0 0 256 256"
+              class="icon"
+            >
+              <path
+                d="M164,80a28,28,0,1,0-28-28A28,28,0,0,0,164,80Zm0-40a12,12,0,1,1-12,12A12,12,0,0,1,164,40Zm36,96a40,40,0,1,0,40,40A40,40,0,0,0,200,136Zm0,64a24,24,0,1,1,24-24A24,24,0,0,1,200,200ZM56,136a40,40,0,1,0,40,40A40,40,0,0,0,56,136Zm0,64a24,24,0,1,1,24-24A24,24,0,0,1,56,200Zm136-80H152a8,8,0,0,1-5.66-2.34L120,91.31,99.31,112l34.35,34.34A8,8,0,0,1,136,152v48a8,8,0,0,1-16,0V155.31L82.34,117.66a8,8,0,0,1,0-11.32l32-32a8,8,0,0,1,11.32,0L155.31,104H192a8,8,0,0,1,0,16Z"
+              ></path>
+            </svg>
+            <h3 class="heading-tertiary">Sleek Design:</h3>
+            <p class="para">
+              Immerse yourself in our bicycles' modern and sleek designs,
+              meticulously crafted to turn heads on every ride.
+            </p>
+          </div>
+          <!-- feature2 -->
+          <div class="feature flex-v">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="36"
+              height="36"
+              fill="#191919"
+              viewBox="0 0 256 256"
+              class="icon"
+            >
+              <path
+                d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216ZM80,108a12,12,0,1,1,12,12A12,12,0,0,1,80,108Zm96,0a12,12,0,1,1-12-12A12,12,0,0,1,176,108Zm-1.07,48c-10.29,17.79-27.4,28-46.93,28s-36.63-10.2-46.92-28a8,8,0,1,1,13.84-8c7.47,12.91,19.21,20,33.08,20s25.61-7.1,33.07-20a8,8,0,0,1,13.86,8Z"
+              ></path>
+            </svg>
+            <h3 class="heading-tertiary">Ultimate Comfort:</h3>
+            <p class="para">
+              Enjoy the perfect blend of ergonomics and comfort with specially
+              designed saddles and handlebars.
+            </p>
+          </div>
+          <!-- feature3 -->
+          <div class="feature flex-v">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="36"
+              height="36"
+              fill="#191919"
+              viewBox="0 0 256 256"
+              class="icon"
+            >
+              <path
+                d="M196.12,128c24.65-34.61,37.22-70.38,19.74-87.86S162.61,35.23,128,59.88C93.39,35.23,57.62,22.66,40.14,40.14S35.23,93.39,59.88,128c-24.65,34.61-37.22,70.38-19.74,87.86h0c5.63,5.63,13.15,8.14,21.91,8.14,18.48,0,42.48-11.17,66-27.88C151.47,212.83,175.47,224,194,224c8.76,0,16.29-2.52,21.91-8.14h0C233.34,198.38,220.77,162.61,196.12,128Zm8.43-76.55c7.64,7.64,2.48,32.4-18.52,63.28a300.33,300.33,0,0,0-21.19-23.57A300.33,300.33,0,0,0,141.27,70C172.15,49,196.91,43.8,204.55,51.45ZM176.29,128a289.14,289.14,0,0,1-22.76,25.53A289.14,289.14,0,0,1,128,176.29a289.14,289.14,0,0,1-25.53-22.76A289.14,289.14,0,0,1,79.71,128,298.62,298.62,0,0,1,128,79.71a289.14,289.14,0,0,1,25.53,22.76A289.14,289.14,0,0,1,176.29,128ZM51.45,51.45c2.2-2.21,5.83-3.35,10.62-3.35C73.89,48.1,92.76,55,114.72,70A304,304,0,0,0,91.16,91.16,300.33,300.33,0,0,0,70,114.73C49,83.85,43.81,59.09,51.45,51.45Zm0,153.1C43.81,196.91,49,172.15,70,141.27a300.33,300.33,0,0,0,21.19,23.57A304.18,304.18,0,0,0,114.73,186C83.85,207,59.09,212.2,51.45,204.55Zm153.1,0c-7.64,7.65-32.4,2.48-63.28-18.52a304.18,304.18,0,0,0,23.57-21.19A300.33,300.33,0,0,0,186,141.27C207,172.15,212.19,196.91,204.55,204.55ZM140,128a12,12,0,1,1-12-12A12,12,0,0,1,140,128Z"
+              ></path>
+            </svg>
+            <h3 class="heading-tertiary">Precision Engineering:</h3>
+            <p class="para">
+              utilizing state-of-the-art engineering to guarantee durability and
+              reliability on any terrain.
+            </p>
+          </div>
+
+          <!-- feature 4 -->
+          <div class="feature flex-v">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="36"
+              height="36"
+              fill="#191919"
+              viewBox="0 0 256 256"
+              class="icon"
+            >
+              <path
+                d="M183.89,153.34a57.6,57.6,0,0,1-46.56,46.55A8.75,8.75,0,0,1,136,200a8,8,0,0,1-1.32-15.89c16.57-2.79,30.63-16.85,33.44-33.45a8,8,0,0,1,15.78,2.68ZM216,144a88,88,0,0,1-176,0c0-27.92,11-56.47,32.66-84.85a8,8,0,0,1,11.93-.89l24.12,23.41,22-60.41a8,8,0,0,1,12.63-3.41C165.21,36,216,84.55,216,144Zm-16,0c0-46.09-35.79-85.92-58.21-106.33L119.52,98.74a8,8,0,0,1-13.09,3L80.06,76.16C64.09,99.21,56,122,56,144a72,72,0,0,0,144,0Z"
+              ></path>
+            </svg>
+            <h3 class="heading-tertiary">Efficient Performance:</h3>
+            <p class="para">
+              Experience effortless rides with smooth gear shifts, responsive
+              braking, and aerodynamic frames
+            </p>
+          </div>
+
+          <!-- feature 5 -->
+          <div class="feature flex-v">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="36"
+              height="36"
+              fill="#191919"
+              viewBox="0 0 256 256"
+              class="icon"
+            >
+              <path
+                d="M197.58,129.06l-51.61-19-19-51.65a15.92,15.92,0,0,0-29.88,0L78.07,110l-51.65,19a15.92,15.92,0,0,0,0,29.88L78,178l19,51.62a15.92,15.92,0,0,0,29.88,0l19-51.61,51.65-19a15.92,15.92,0,0,0,0-29.88ZM140.39,163a15.87,15.87,0,0,0-9.43,9.43l-19,51.46L93,172.39A15.87,15.87,0,0,0,83.61,163h0L32.15,144l51.46-19A15.87,15.87,0,0,0,93,115.61l19-51.46,19,51.46a15.87,15.87,0,0,0,9.43,9.43l51.46,19ZM144,40a8,8,0,0,1,8-8h16V16a8,8,0,0,1,16,0V32h16a8,8,0,0,1,0,16H184V64a8,8,0,0,1-16,0V48H152A8,8,0,0,1,144,40ZM248,88a8,8,0,0,1-8,8h-8v8a8,8,0,0,1-16,0V96h-8a8,8,0,0,1,0-16h8V72a8,8,0,0,1,16,0v8h8A8,8,0,0,1,248,88Z"
+              ></path>
+            </svg>
+            <h3 class="heading-tertiary">Quality Craftsmanship:</h3>
+            <p class="para">
+              Crafted with premium materials, our bikes offer a perfect balance
+              of strength, agility, and longevity
+            </p>
+          </div>
+          <!-- feature 6 -->
+          <div class="feature flex-v">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="36"
+              height="36"
+              fill="#191919"
+              viewBox="0 0 256 256"
+              class="icon"
+            >
+              <path
+                d="M198.1,62.6a76,76,0,0,0-140.2,0A72.27,72.27,0,0,0,16,127.8C15.89,166.62,47.36,199,86.14,200A71.68,71.68,0,0,0,120,192.49V232a8,8,0,0,0,16,0V192.49A71.45,71.45,0,0,0,168,200l1.86,0c38.78-1,70.25-33.36,70.14-72.18A72.26,72.26,0,0,0,198.1,62.6ZM169.45,184a55.61,55.61,0,0,1-32.52-9.4q-.47-.3-.93-.57V132.94l43.58-21.78a8,8,0,1,0-7.16-14.32L136,115.06V88a8,8,0,0,0-16,0v51.06L83.58,120.84a8,8,0,1,0-7.16,14.32L120,156.94V174q-.47.27-.93.57A55.7,55.7,0,0,1,86.55,184a56,56,0,0,1-22-106.86,15.9,15.9,0,0,0,8.05-8.33,60,60,0,0,1,110.7,0,15.9,15.9,0,0,0,8.05,8.33,56,56,0,0,1-22,106.86Z"
+              ></path>
+            </svg>
+            <h3 class="heading-tertiary">Environment frendly</h3>
+            <p class="para">
+              Ride proudly on our sustainably designed bicycles, promoting
+              eco-friendly transportation
+            </p>
+          </div>
+        </div>
+
+        <!-- youtube video -->
+        <div class="feature-video">
+          <iframe
+            width="702"
+            height="395"
+            src="https://www.youtube.com/embed/vVXnYdHwDqM"
+            title="CYCLING CINEMATIC VIDEO  I GH5"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- products section -->
+    <section class="section-products" id="price">
+      <div class="container">
+        <h2 class="heading-secondary margin-md">Choose among the best:</h2>
+        <div class="grid grid-3-cols cards-box">
+          <!-- card 1 -->
+          <div class="card">
+            <figure>
+              <img
+                src="/images/feature - bicycle 1.avif"
+                alt="bicycle image"
+                class="image"
+              />
+            </figure>
+            <div class="card-content">
+              <h3 class="heading-tertiary">City Cruiser - $499.99</h3>
+              <ul class="list">
+                <li>
+                  <span class="check-mark">&check;</span>Stylish Urban Design
+                </li>
+                <li>
+                  <span class="check-mark">&check;</span>Comfortable Ergonomic
+                  Seat
+                </li>
+                <li>
+                  <span class="check-mark">&check;</span>Responsive City Brakes
+                </li>
+                <li>
+                  <span class="check-mark">&check;</span>Integrated LED Lighting
+                </li>
+              </ul>
+              <a href="#cta" class="nav-link">Get your ride</a>
+            </div>
+          </div>
+          <!-- card -2 -->
+          <div class="card">
+            <figure>
+              <img
+                src="/images/feature - bicycle 2.avif"
+                alt="Mountain Explorer image"
+                class="image"
+              />
+            </figure>
+            <div class="card-content">
+              <h3 class="heading-tertiary">Mtn Explorer - $899.99</h3>
+              <ul class="list">
+                <li>
+                  <span class="check-mark">&check;</span>Durable All-Terrain
+                  Frame
+                </li>
+                <li>
+                  <span class="check-mark">&check;</span>Precision Gear Shifting
+                </li>
+                <li>
+                  <span class="check-mark">&check;</span>Hydraulic Disc Brakes
+                </li>
+                <li>
+                  <span class="check-mark">&check;</span>Shock-Absorbing
+                  Suspension
+                </li>
+              </ul>
+              <a href="#cta" class="nav-link">Get your ride</a>
+            </div>
+          </div>
+          <!-- card3 -->
+          <div class="card">
+            <figure>
+              <img
+                src="/images/feature - bicycle 3.avif"
+                alt="Road Warrior image"
+                class="image"
+              />
+            </figure>
+            <div class="card-content">
+              <h3 class="heading-tertiary">Road Warrior - $749.99</h3>
+              <ul class="list">
+                <li>
+                  <span class="check-mark">&check;</span>Lightweight Aero Frame
+                </li>
+                <li>
+                  <span class="check-mark">&check;</span>High-Performance
+                  Gearset
+                </li>
+                <li>
+                  <span class="check-mark">&check;</span>Aerodynamic Handlebars
+                </li>
+                <li>
+                  <span class="check-mark">&check;</span>Quick-Response Dual
+                  Pivot Brakes
+                </li>
+              </ul>
+              <a href="#cta" class="nav-link">Get your ride</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- cta section -->
+    <section class="section-cta" id="cta">
+      <div class="container grid grid-2-cols cta-box">
+        <div class="form">
+          <h2 class="heading-secondary form-heading">
+            Ride in style. Get your bike.
+          </h2>
+          <p class="para form-descreption">
+            Get ready to ride in style! Explore our exclusive bike collection
+            and claim your preferred model. Simply fill out the form below.
+          </p>
+          <form id="form" action="" method="post" class="flex-v">
+            <label class="label" for="name">Name</label>
+            <input
+              id="name"
+              type="text"
+              name="email"
+              placeholder="person(example)"
+              required
+            />
+            <label class="label" for="email">Email</label>
+            <input
+              id="email"
+              type="email"
+              name="email"
+              placeholder="example123@gmail.com"
+              required
+            />
+            <label class="label" for="model">Preferred Model</label>
+            <input
+              id="model"
+              type="text"
+              name="email"
+              placeholder="city-cruiser"
+              required
+            />
+            <input class="submit" id="submit" type="submit" value="sumbit" />
+          </form>
+        </div>
+        <div class="cta-image-box"></div>
+      </div>
+    </section>
+
+    <footer class="footer" id="footer">
+      <div class="container footer-box flex-v flex-center">
+        <p class="para">&copy; 2024 all rights reserved</p>
+        <p class="para">Follow us on</p>
+        <div class="social-icons flex-h">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            fill="#000000"
+            viewBox="0 0 256 256"
+            class="icon"
+            href="#"
+          >
+            <path
+              d="M247.39,68.94A8,8,0,0,0,240,64H209.57A48.66,48.66,0,0,0,168.1,40a46.91,46.91,0,0,0-33.75,13.7A47.9,47.9,0,0,0,120,88v6.09C79.74,83.47,46.81,50.72,46.46,50.37a8,8,0,0,0-13.65,4.92c-4.31,47.79,9.57,79.77,22,98.18a110.93,110.93,0,0,0,21.88,24.2c-15.23,17.53-39.21,26.74-39.47,26.84a8,8,0,0,0-3.85,11.93c.75,1.12,3.75,5.05,11.08,8.72C53.51,229.7,65.48,232,80,232c70.67,0,129.72-54.42,135.75-124.44l29.91-29.9A8,8,0,0,0,247.39,68.94Zm-45,29.41a8,8,0,0,0-2.32,5.14C196,166.58,143.28,216,80,216c-10.56,0-18-1.4-23.22-3.08,11.51-6.25,27.56-17,37.88-32.48A8,8,0,0,0,92,169.08c-.47-.27-43.91-26.34-44-96,16,13,45.25,33.17,78.67,38.79A8,8,0,0,0,136,104V88a32,32,0,0,1,9.6-22.92A30.94,30.94,0,0,1,167.9,56c12.66.16,24.49,7.88,29.44,19.21A8,8,0,0,0,204.67,80h16Z"
+            ></path>
+          </svg>
+          <!-- youtube -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            fill="#000000"
+            viewBox="0 0 256 256"
+            class="icon"
+            href="#"
+          >
+            <path
+              d="M164.44,121.34l-48-32A8,8,0,0,0,104,96v64a8,8,0,0,0,12.44,6.66l48-32a8,8,0,0,0,0-13.32ZM120,145.05V111l25.58,17ZM234.33,69.52a24,24,0,0,0-14.49-16.4C185.56,39.88,131,40,128,40s-57.56-.12-91.84,13.12a24,24,0,0,0-14.49,16.4C19.08,79.5,16,97.74,16,128s3.08,48.5,5.67,58.48a24,24,0,0,0,14.49,16.41C69,215.56,120.4,216,127.34,216h1.32c6.94,0,58.37-.44,91.18-13.11a24,24,0,0,0,14.49-16.41c2.59-10,5.67-28.22,5.67-58.48S236.92,79.5,234.33,69.52Zm-15.49,113a8,8,0,0,1-4.77,5.49c-31.65,12.22-85.48,12-86,12H128c-.54,0-54.33.2-86-12a8,8,0,0,1-4.77-5.49C34.8,173.39,32,156.57,32,128s2.8-45.39,5.16-54.47A8,8,0,0,1,41.93,68c30.52-11.79,81.66-12,85.85-12h.27c.54,0,54.38-.18,86,12a8,8,0,0,1,4.77,5.49C221.2,82.61,224,99.43,224,128S221.2,173.39,218.84,182.47Z"
+            ></path>
+          </svg>
+          <!-- instagram -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            fill="#000000"
+            viewBox="0 0 256 256"
+            class="icon"
+            href="#"
+          >
+            <path
+              d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"
+            ></path>
+          </svg>
+        </div>
+        <hr width="100%" size="1" />
+        <p class="para bio">This is a prototype page.</p>
+        <p class="para bio">-by Sharath Devadiga</p>
+      </div>
+    </footer>
+  </body>
+</html>

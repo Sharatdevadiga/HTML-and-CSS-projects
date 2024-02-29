@@ -1,0 +1,97 @@
+/* centering the page */
+body {
+  background: linear-gradient(
+      22deg,
+      rgba(191, 139, 240, 0.3) 30%,
+      rgba(215, 111, 218, 0.3) 68%
+    ),
+    url("form - background.avif");
+  background-size: cover;
+}
+
+.container {
+  font-family: sans-serif;
+  width: 75%;
+  margin: 64px auto;
+  color: white;
+  background: black;
+  border: 6px;
+  border-radius: 3mm;
+}
+
+/* styling heading */
+.header {
+  padding: 20px;
+  text-align: center;
+}
+#title {
+  font-size: 40px;
+}
+
+/* stying the form */
+#survey-form {
+  background-color: rgb(34 34 34);
+  color: white;
+  padding: 30px;
+  padding: 64px 6.4rem;
+}
+
+fieldset {
+  border: none;
+  margin-bottom: 25px;
+}
+input {
+  margin: 10px auto;
+}
+#name,
+#email,
+#number,
+#last-name,
+#dropdown,
+#text-area {
+  display: block;
+  width: 100%;
+  /* margin:10px auto; */
+  background-color: black;
+  margin-bottom: 10px;
+  border: 2px solid black;
+  border-radius: 2mm;
+  height: 35px;
+  color: white;
+  font-size: 15;
+}
+#text-area {
+  height: 60px;
+  line-height: 1.5;
+  font-size: 20;
+}
+
+#submit {
+  width: 80%;
+  display: block;
+  margin: 30px auto;
+  height: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: white;
+  border: 3px solid white;
+  border-radius: 3mm;
+  transition: all 0.3s;
+}
+
+#submit:hover {
+  background-color: #6ff16f;
+  border: 3px solid #6ff16f;
+  border-radius: 3mm;
+  cursor: pointer;
+}
+
+label {
+  display: block;
+  margin-bottom: 32px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  margin-left: 20px;
+}

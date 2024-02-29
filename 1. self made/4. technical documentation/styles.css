@@ -1,0 +1,139 @@
+/* ------------------------------ */
+/* sizes: 10 12 14 16 18 20 24 30 36 44 52 65 74 86 98 */
+/* spacing: 2 4 8 12 24 32 48 64 80 96 128 */
+/* colors */
+/* --------------------------------- */
+
+/* ---------------------- */
+/* general styles */
+/* ----------------------- */
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  padding: 0px;
+  margin: 0px;
+  line-height: 1.75;
+  scroll-behavior: smooth;
+}
+@media (max-width: 800px) {
+  #navbar {
+    display: none;
+  }
+  .navigation-box {
+    display: none;
+  }
+  body {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+body {
+  display: flex;
+  gap: 128px;
+}
+
+header {
+  font-size: 36px;
+  font-weight: bold;
+  background-color: #c2f6fd;
+}
+#main-doc {
+  padding: 80px 80px 0px 128px;
+  border-top: 10px solid #3e8b95;
+  padding-right: 250px;
+}
+#main-doc header {
+  color: #1f464b;
+  margin-bottom: 24px;
+  border-top: 5px solid #3e8b95;
+}
+h3 {
+  color: #1f464b;
+  margin-bottom: 8px;
+  font-size: 24px;
+}
+p {
+  margin-bottom: 24px;
+  margin-left: 32px;
+  font-size: 20px;
+}
+/* alignment */
+.main-section {
+  margin-bottom: 80px;
+}
+.content {
+  padding-left: 30px;
+}
+ol {
+  padding: 0 0 0 64px;
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+pre {
+  font-size: 18px;
+  background-color: #e1fafe;
+  margin: 0 0 32px 32px;
+}
+.image {
+  margin-bottom: 32px;
+}
+figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ---------------------- */
+/* component styles */
+/* ----------------------- */
+/* navigation bar */
+#navbar {
+  position: fixed;
+  padding: 80px 48px;
+  height: 100%;
+  background-color: #f0fdfe;
+  border-top: 10px solid #3e8b95;
+  border-bottom: 10px solid #3e8b95;
+  overflow: scroll;
+}
+nav a {
+  display: block;
+  text-decoration: none;
+  font-size: 24px;
+  color: #0a1719;
+  background-color: #e1fafe;
+  padding: 4px 8px;
+  margin-bottom: 12px;
+}
+
+nav a:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  background-color: #a4f1fb;
+}
+nav ul {
+  list-style: none;
+}
+nav header {
+  background-color: #c2f6fd;
+  padding: 12px 32px;
+  margin: 0 -25px 48px;
+}
+.inner-nav {
+  padding: 0 0 0 32px;
+  margin-bottom: 48px;
+  font-size: 18px;
+}
+.navigation-box::before {
+  content: "";
+  display: block;
+  width: 250px;
+}
+
+.footer {
+  border-bottom: 10px solid #3e8b95;
+  margin: 0px -500px 0px -250px;
+}

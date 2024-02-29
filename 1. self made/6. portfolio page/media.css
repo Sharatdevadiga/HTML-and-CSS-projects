@@ -1,0 +1,63 @@
+/* 1200px */
+@media (max-width: 78em) {
+  .container {
+    padding-left: 6.4rem;
+    padding-right: 6.4rem;
+  }
+}
+/* 1000px */
+@media (max-width: 62.5em) {
+  html {
+    font-size: 49.25%;
+  }
+  h1 {
+    font-size: 7.2rem;
+  }
+  .project-info {
+    height: 5.6rem;
+  }
+}
+/* 800px */
+@media (max-width: 50em) {
+  .project-info {
+    height: 4.4rem;
+  }
+}
+
+/* 700px */
+@media (max-width: 43.75em) {
+  html {
+    font-size: 43%;
+  }
+  .grid-2-cols {
+    grid-template-columns: 1fr;
+  }
+  .navbar {
+    gap: 1.2rem;
+  }
+  .container {
+    max-width: 100%;
+  }
+  h1 {
+    transform: translateX(0);
+  }
+}
+
+/* 540px */
+@media (max-width: 33.75em) {
+  .heading-secondary,
+  .footer-heading {
+    font-size: 3.6rem;
+  }
+}
+
+/* 470px */
+
+@media (max-width: 30em) {
+  html {
+    font-size: 36.25%;
+  }
+  .footer-heading {
+    font-size: 3rem;
+  }
+}

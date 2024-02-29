@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Survey form</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title">Survey-form</h1>
+        <p id="description">kindly fill the below form</p>
+      </header>
+
+      <form id="survey-form" action="#">
+        <fieldset>
+          <label for="name">
+            First Name
+            <input id="name" type="text" placeholder="name" required />
+          </label>
+
+          <label for="last-name">
+            Last Name
+            <input
+              id="last-name"
+              type="text"
+              placeholder="last name"
+              required
+            />
+          </label>
+
+          <label for="email">
+            Email
+            <input id="email" type="email" placeholder="email" required />
+          </label>
+
+          <label for="number">
+            Phone Number
+            <input
+              id="number"
+              type="tel"
+              min="0000000000"
+              max="9999999999"
+              placeholder="number"
+            />
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>choose field of interest</legend>
+          <select id="dropdown">
+            <option value="">--choose an option--</option>
+            <option value="engineering">machine learning</option>
+            <option value="medical">android development</option>
+            <option value="agriculture">front end development</option>
+            <option value="acting">backend development</option>
+            <option value="other">other</option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <legend>do you like coding</legend>
+          <label>
+            <input type="radio" name="coding" value="yes" checked />
+            yes
+          </label>
+
+          <label>
+            <input type="radio" name="coding" value="no" />
+            no
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>which programming languages you know?</legend>
+          <label>
+            <input type="checkbox" value="java" name="language" />
+            java
+          </label>
+
+          <label>
+            <input type="checkbox" value="javascript" name="language" />
+            javascript
+          </label>
+
+          <label>
+            <input type="checkbox" value="python" name="language" />
+            python
+          </label>
+
+          <label>
+            <input type="checkbox" value="csharp" name="language" />
+            c#
+          </label>
+
+          <label>
+            <input type="checkbox" value="other" name="language" />
+            some other
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>share your thoughts on AI and future of coding</legend>
+          <label>
+            <textarea id="text-area"></textarea>
+          </label>
+        </fieldset>
+
+        <button id="submit" type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>

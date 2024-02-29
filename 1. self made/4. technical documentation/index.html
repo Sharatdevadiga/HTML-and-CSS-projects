@@ -1,0 +1,709 @@
+<!--1. html skeleton -->
+<!--2. content filling -->
+<!--3. layout plan -->
+<!--4. styling -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Basics Documentation</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="navigation-box">
+      <nav id="navbar">
+        <!-- header-topic name -->
+        <header>Basics of CSS</header>
+        <!-- link every section text must be same of section text-->
+        <ul class="nav-entries">
+          <li>
+            <a class="nav-link" href="#1._Introduction_to_CSS"
+              >1. Introduction to CSS
+            </a>
+            <ul class="inner-nav">
+              <li>1.1. What is CSS?</li>
+              <li>1.2. Role of CSS</li>
+              <li>1.3. How CSS Works</li>
+              <li>1.4. Basic Syntax</li>
+              <li>1.5. Linking CSS to HTML</li>
+            </ul>
+          </li>
+          <li>
+            <a class="nav-link" href="#2._Selectors_in_CSS"
+              >2. Selectors in CSS</a
+            >
+            <ul class="inner-nav">
+              <li>2.1. commonly used selectors</li>
+            </ul>
+          </li>
+          <li>
+            <a class="nav-link" href="#3._CSS_Box_Model">3. CSS Box Model</a>
+            <ul class="inner-nav">
+              <li>3.1. Fundamental concepts</li>
+              <li>3.2. Example</li>
+            </ul>
+          </li>
+          <li>
+            <a class="nav-link" href="#4._CSS_properties">4. CSS properties</a>
+            <ul class="inner-nav">
+              <li>4.1. Common CSS Properties</li>
+              <li>4.2. Example</li>
+            </ul>
+          </li>
+          <li>
+            <a class="nav-link" href="#5._CSS_Layouts">5. CSS Layouts</a>
+            <ul class="inner-nav">
+              <li>5.1. Flexbox</li>
+              <li>5.2. CSS Grid</li>
+            </ul>
+          </li>
+          <li>
+            <a class="nav-link" href="#6._Other_topics">6. Other topics</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#7._Reference">7. Reference</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <main id="main-doc">
+      <!--id = text in header (4)-->
+      <section class="main-section" id="1._Introduction_to_CSS">
+        <header>1. Introduction to CSS</header>
+
+        <div class="content">
+          <h3>1.1. What is CSS?</h3>
+          <p>
+            CSS, which stands for Cascading Style Sheets, is a style sheet
+            language used to describe the presentation of a document written in
+            HTML or XML. In simpler terms, CSS is responsible for styling and
+            formatting web pages, making them visually appealing and engaging.
+          </p>
+        </div>
+
+        <div class="content">
+          <h3>1.2. Role of CSS in Web Development:</h3>
+          <p>
+            CSS plays a crucial role in separating the structure of a web page
+            (HTML) from its presentation. While HTML defines the content and
+            structure of a webpage, CSS is used to control the layout, color,
+            font, and other visual aspects. This separation enhances the
+            maintainability and flexibility of web development projects.
+          </p>
+        </div>
+
+        <div class="content">
+          <h3>1.3. How CSS Works:</h3>
+          <p>
+            CSS works by applying rules to HTML elements. These rules consist of
+            selectors that target specific elements and declarations that define
+            how those elements should be styled. The term "cascading" in CSS
+            refers to the order of priority when multiple styles are applied to
+            the same element. Styles can be inherited, overridden, or combined
+            in a cascading fashion.
+          </p>
+        </div>
+
+        <div class="content">
+          <h3>1.4. Basic Syntax:</h3>
+          <p>
+            A CSS rule consists of a selector and a declaration block. The
+            selector identifies the HTML element to be styled, and the
+            declaration block contains one or more declarations separated by
+            semicolons. Each declaration consists of a property and a value.
+          </p>
+          <pre>
+          <code>
+              selector {
+                property: value;
+                /* Additional declarations */
+              }
+          </code>
+        </pre>
+        </div>
+
+        <div class="content">
+          <h3>1.5. Linking CSS to HTML:</h3>
+          <p>CSS can be applied to HTML documents in three ways:</p>
+          <ol>
+            <li>
+              Inline styles: internal styles (within the
+              <code>&lt;style&gt;</code> tag within a line HTML document)
+            </li>
+            <li>
+              Internal styles: using same style tag but here a block of CSS code
+              can be written
+            </li>
+            <li>
+              External styles (in a separate CSS file linked to the HTML
+              document).
+            </li>
+          </ol>
+          <pre>
+            <code>
+              &lt;!-- External CSS file --&gt;
+              &lt;link rel="stylesheet" type="text/css" href="styles.css"&gt;
+
+              &lt;!-- Internal CSS --&gt;
+              &lt;style&gt;
+                /* CSS rules here */
+              &lt;/style&gt;
+            </code>
+          </pre>
+        </div>
+
+        <div class="content">
+          <p>
+            In summary, CSS is a powerful tool that enhances the visual
+            presentation of web content, providing developers with the ability
+            to create attractive and consistent user interfaces across different
+            devices and browsers. Understanding the basics of CSS is fundamental
+            for anyone involved in web development.
+          </p>
+        </div>
+      </section>
+
+      <section class="main-section" id="2._Selectors_in_CSS">
+        <header>2. Selectors in CSS</header>
+        <div class="content">
+          <p>
+            CSS selectors are patterns used to select and style HTML elements on
+            a web page. They play a crucial role in defining which elements will
+            be affected by a particular set of styles. Selectors are the
+            building blocks of CSS, allowing developers to target specific
+            elements based on various criteria.
+          </p>
+        </div>
+
+        <div class="content">
+          <h3>2.1. commonly used selectors:</h3>
+          <ol>
+            <li>
+              <strong>Element Selector:</strong>
+              Selects HTML elements based on their tag names. For example, p
+              selects all <code>&lt;p&gt;</code> paragraphs.
+            </li>
+            <li>
+              <strong>Class Selector:</strong>
+              Selects elements with a specific class attribute. It is denoted by
+              a period (.) followed by the class name. For example, .header
+              selects all elements with the class "header."
+            </li>
+            <li>
+              <strong>ID Selector:</strong>
+              Selects a single element with a specific ID attribute. It is
+              denoted by a hash (#) followed by the ID name. For example,
+              #main-content selects the element with the ID "main-content."
+            </li>
+            <li>
+              <strong>Descendant Selector:</strong>
+              Selects an element that is a descendant of another specified
+              element. It uses whitespace to separate the elements. For example,
+              ul li selects all <code>&lt;li&gt;</code> elements that are
+              descendants of a <code>&lt;ul&gt;</code>.
+            </li>
+            <li>
+              <strong>Child Selector:</strong>
+              Selects a direct child of a specified element. It uses the
+              greater-than sign (&gt;). For example, ul &gt; li selects all
+              <code>&lt;li&gt;</code> elements that are direct children of a
+              <code>&lt;ul&gt;</code>.
+            </li>
+            <li>
+              <strong>Attribute Selector:</strong>
+              Selects elements based on their attributes. For example,
+              input[type="text"] selects all <code>&lt;input&gt;</code> elements
+              with a type attribute set to "text."
+            </li>
+            <li>
+              <strong>Pseudo-classes:</strong>
+              Selects elements based on their state or position, such as :hover
+              for hover states and :nth-child() for selecting elements based on
+              their position in a parent.
+            </li>
+            <li>
+              <strong>Pseudo-elements:</strong>
+              Selects parts of an element, such as ::before and ::after for
+              styling content before and after an element.
+            </li>
+          </ol>
+        </div>
+        <div class="content">
+          <p>
+            Understanding and mastering CSS selectors is fundamental to creating
+            well-organized and maintainable stylesheets in web development. They
+            provide the means to precisely target and style different elements
+            on a webpage.
+          </p>
+        </div>
+      </section>
+
+      <section class="main-section" id="3._CSS_Box_Model">
+        <header>3. CSS Box Model</header>
+        <div class="content">
+          <p>
+            The CSS box model is a fundamental concept that describes how
+            elements are structured and spaced in a web page. It consists of
+            four main components: content, padding, border, and margin. Here's a
+            brief explanation along with an image and code examples:
+          </p>
+        </div>
+        <div class="image">
+          <figure>
+            <img
+              src="/images/box - model.svg"
+              alt="Box-model.svg"
+              height="400"
+              width="765"
+            />
+            <figcaption>CSS Box Model(image source - wikidata.org)</figcaption>
+          </figure>
+        </div>
+
+        <div class="content">
+          <h3>3.1. Fundamental concepts</h3>
+          <ol>
+            <li>
+              <strong> Content:</strong>
+              The content area is where the actual content of the element, such
+              as text or images, is displayed.
+            </li>
+            <li>
+              <strong>Padding:</strong>
+              Padding is the space between the content and the border. It
+              provides internal spacing within the element.
+            </li>
+            <li>
+              <strong>Border:</strong>
+              The border surrounds the content and padding. It can have a
+              specified width, style, and color.
+            </li>
+            <li>
+              <strong>Margin:</strong>
+              Margin is the space outside the border and helps control the
+              spacing between elements.
+            </li>
+          </ol>
+        </div>
+
+        <div class="content">
+          <h3>3.2. Example</h3>
+          <p>Styling an element using the box model</p>
+          <pre>
+            <code>              
+                .box-model-example {
+                  width: 300px;
+                  height: 150px;
+                  padding: 20px;
+                  border: 2px solid #3498db;
+                  margin: 10px;
+                }
+            </code>
+          </pre>
+          <p>
+            In this example, the .box-model-example class sets the width and
+            height of the content, adds padding, defines a border, and sets a
+            margin.
+          </p>
+          <p>
+            Understanding and manipulating these properties allows us to control
+            the layout and spacing of elements on a web page.
+          </p>
+        </div>
+      </section>
+
+      <section class="main-section" id="4._CSS_properties">
+        <header>4. CSS properties</header>
+        <div class="content">
+          <p>
+            CSS (Cascading Style Sheets) properties are attributes that define
+            the visual presentation of HTML elements on a web page. They control
+            aspects such as color, size, spacing, and layout, allowing web
+            developers to style and design their content.
+          </p>
+          <p>
+            CSS properties are applied to HTML elements using style rules. These
+            rules can be written directly within an HTML file using inline
+            styles, in a <code>&lt;style&gt;</code> block in the document's
+            <code>&lt;head&gt;</code>, or in an external CSS file. Properties
+            are specified with values that define how an element should appear
+            or behave.
+          </p>
+        </div>
+        <div class="content">
+          <h3>4.1. Common CSS Properties:</h3>
+          <ol>
+            <li>
+              <strong>Color (color):</strong>
+              Specifies the text color. Example: color: #336699;
+            </li>
+            <li>
+              <strong>Font Size (font-size):</strong>
+              Sets the size of the text. Example: font-size: 16px;
+            </li>
+            <li>
+              <strong>Font Family (font-family):</strong>
+              Defines the typeface for the text. Example: font-family: "Arial",
+              sans-serif;
+            </li>
+            <li>
+              <strong>Margin (margin):</strong>
+              Sets the space outside an element. Example: margin: 10px;
+            </li>
+            <li>
+              <strong>Padding (padding):</strong>
+              Defines the space inside an element. Example: padding: 8px;
+            </li>
+            <li>
+              <strong>Border (border):</strong>
+              Specifies the border around an element. Example: border: 1px solid
+              #ccc;
+            </li>
+            <li>
+              <strong>Width and Height (width, height):</strong>
+              Sets the dimensions of an element. Example: width: 300px; height:
+              200px;
+            </li>
+            <li>
+              <strong>Background Color (background-color):</strong>Defines the
+              background color of an element. Example: background-color:
+              #f0f0f0;
+            </li>
+            <li>
+              <strong>Text Alignment (text-align): </strong>Aligns text within
+              an element. Example: text-align: center;
+            </li>
+            <li>
+              <strong>Display (display):</strong>
+              Use: Specifies how an element should be displayed. Example:
+              display: flex;
+            </li>
+          </ol>
+        </div>
+        <div class="content">
+          <p>
+            These are just a few examples of the many CSS properties available.
+            Understanding and utilizing these properties allows us to create
+            visually appealing and responsive web pages.
+          </p>
+        </div>
+        <div class="content">
+          <h3>4.2. Example</h3>
+          <pre>
+            <code>
+              .my-box {
+                  width: 200px;
+                  height: 150px;
+                  background-color: #66cc99;
+                  border: 2px solid #336699;
+                  margin: 10px;
+                  padding: 15px;
+                  text-align: center;
+                  color: #ffffff;
+              }
+            </code>
+          </pre>
+          <p>
+            In this example, a CSS class named .my-box is defined with various
+            properties. The width and height set the dimensions of the box,
+            background-color determines the background color, border creates a
+            border with a specified color, margin adds space around the box,
+            padding adds space inside the box, text-align centers the text, and
+            color sets the text color to white. This declaration block styles a
+            box with a light green background, a blue border, and white text,
+            demonstrating how multiple properties can be combined to define the
+            appearance of an HTML element.
+          </p>
+        </div>
+      </section>
+
+      <section class="main-section" id="5._CSS_Layouts">
+        <header>5. CSS Layouts</header>
+        <div class="content">
+          <p>
+            n web development, understanding various layout techniques is
+            crucial for creating well-structured and visually appealing pages.
+            CSS provides several layout options that cater to different design
+            requirements. This section explores key layout concepts and their
+            practical applications.
+          </p>
+        </div>
+        <div class="flexbox"></div>
+        <div class="content">
+          <h3>5.1. Flexbox</h3>
+          <p>
+            Flexbox, short for Flexible Box, is a layout model in CSS that
+            provides an efficient way to design complex and responsive layouts.
+            It allows for the creation of flexible containers and the
+            arrangement of items within them, adapting to various screen sizes
+            and devices.
+          </p>
+        </div>
+        <div class="image">
+          <figure>
+            <img src="/images/flex-box.png" alt="flex-box " />
+            <figcaption>Flex-box concepte (image source - MDN docs)</figcaption>
+          </figure>
+        </div>
+        <div>
+          <p><strong>5.1.1. Key Concepts:</strong></p>
+          <ol>
+            <li>
+              <strong>Flex Container and Items:</strong>
+              <ol>
+                <li>
+                  A container with display: flex or display: inline-flex becomes
+                  a flex container.
+                </li>
+                <li>
+                  Child elements within the flex container are referred to as
+                  flex items.
+                </li>
+              </ol>
+            </li>
+            <li>
+              <strong>Main and Cross Axes:</strong>
+              <ol>
+                <li>
+                  Flexbox operates along two axes: the main axis and the cross
+                  axis.
+                </li>
+                <li>
+                  The main axis defines the direction in which flex items are
+                  placed, and the cross axis is perpendicular to it.
+                </li>
+              </ol>
+            </li>
+            <li>
+              <strong>Properties:</strong>
+              <ol>
+                <li>
+                  flex-direction: Determines the main axis direction (row,
+                  row-reverse, column, column-reverse).
+                </li>
+                <li>
+                  justify-content: Aligns items along the main axis (flex-start,
+                  flex-end, center, space-between, space-around).
+                </li>
+                <li>
+                  align-items: Aligns items along the cross axis (flex-start,
+                  flex-end, center, baseline, stretch).
+                </li>
+                <li>
+                  align-self: Overrides align-items for a specific flex item.
+                </li>
+                <li>
+                  flex: Combines flex-grow, flex-shrink, and flex-basis
+                  properties.
+                </li>
+              </ol>
+            </li>
+          </ol>
+        </div>
+        <div class="content">
+          <p><strong>5.1.2. Example</strong></p>
+          <pre>
+            <code>
+              .container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+              }
+
+              .item {
+                flex: 1;
+              }
+            </code>
+          </pre>
+          <p>
+            In this example, the container becomes a flex container, and items
+            within it are evenly spaced along the main axis with centered
+            alignment on the cross axis.
+          </p>
+        </div>
+
+        <div class="grid">
+          <h3>5.2. CSS Grid</h3>
+          <div class="content">
+            <p>
+              CSS Grid is a two-dimensional layout system that enables precise
+              control over both rows and columns in a web layout. It provides a
+              powerful and flexible way to create complex grid-based designs,
+              making it a valuable tool for building responsive and visually
+              appealing web pages.
+            </p>
+          </div>
+          <div class="image">
+            <figure>
+              <img
+                src="/images/css grid.png"
+                alt="Grid"
+                width="400px"
+                height="400px"
+              />
+              <figcaption>Css grid (image source - wikipedia)</figcaption>
+            </figure>
+          </div>
+          <div>
+            <p><strong>5.2.1. Key Concepts:</strong></p>
+            <ol>
+              <li>
+                <strong>. Grid Container and Items:</strong>
+                <ol>
+                  <li>
+                    A container with display: grid becomes a grid container.
+                  </li>
+                  <li>
+                    Child elements within the grid container are referred to as
+                    grid items.
+                  </li>
+                </ol>
+              </li>
+              <li>
+                <strong> Grid Tracks:</strong>
+                <ol>
+                  <li>
+                    The rows and columns of the grid are known as tracks.-
+                  </li>
+                  <li>
+                    Tracks can be defined explicitly using the
+                    grid-template-rows and grid-template-columns properties.
+                  </li>
+                </ol>
+              </li>
+              <li>
+                <strong>. Grid Areas:</strong>
+                <ol>
+                  <li>
+                    Grid areas allow you to name and reference specific regions
+                    within the grid.
+                  </li>
+                  <li>
+                    Use the grid-template-areas property to define named areas
+                    and place items accordingly.
+                  </li>
+                </ol>
+              </li>
+              <li>
+                <strong>Properties:</strong>
+                <ol>
+                  <li>
+                    grid-template-rows and grid-template-columns: Define the
+                    size of rows and columns.
+                  </li>
+                  <li>
+                    grid-gap or grid-row-gap/grid-column-gap: Set the gap
+                    between grid tracks.
+                  </li>
+                  <li>
+                    grid-template-areas: Assign names to areas in the grid for
+                    easy placement of items.
+                  </li>
+                  <li>
+                    grid-column and grid-row: Explicitly place items within the
+                    grid.
+                  </li>
+                </ol>
+              </li>
+            </ol>
+          </div>
+          <div class="content">
+            <p><strong>5.2.2. Example</strong></p>
+            <pre>
+              <code>
+                .container {
+                  display: grid;
+                  grid-template-columns: 1fr 2fr 1fr;
+                  grid-template-rows: auto;
+                  grid-gap: 10px;
+                }
+
+                .item {
+                  grid-column: 2 / 3;
+                  grid-row: 1;
+                }
+              </code>
+            </pre>
+            <p>
+              In this example, the container is defined as a grid with three
+              columns of varying widths. The .item is placed in the second
+              column and the first row.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="main-section" id="6._Other_topics">
+        <header>6. Other topics</header>
+        <div class="content">
+          <p>
+            While the above topics cover the fundamental aspects of CSS, there
+            are many other important concepts and techniques to explore. For
+            more in-depth information, you can refer to the
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+              >Mozilla Developer Network (MDN)</a
+            >
+            documentation, which provides comprehensive resources on various CSS
+            topics. Here are a few additional topics that you might find
+            interesting:
+          </p>
+          <p>
+            <strong>Responsive Web Design:</strong><br />
+            Responsive web design is a crucial aspect of modern web development.
+            It involves creating web pages that adapt and respond to different
+            devices and screen sizes. Media queries play a significant role in
+            achieving responsiveness, allowing developers to apply specific
+            styles based on the characteristics of the user's device. Learning
+            more about fluid grids, flexible images, and the principles of
+            responsive design is essential for seamless user experience across a
+            variety of devices.
+          </p>
+          <p>
+            <strong>CSS Transitions and Animations:</strong><br />
+            CSS transitions and animations add dynamic and visually appealing
+            effects to web pages. Transitions enable smooth changes between
+            states, while animations allow us to create more complex and
+            customized motion effects. By understanding keyframes, timing
+            functions, and transition properties, we can enhance the user
+            interface and engagement on our website.
+          </p>
+          <p>
+            <strong>Positioning in CSS:</strong><br />
+            Mastering positioning in CSS is essential for creating
+            well-structured layouts. The positioning property allows us to
+            precisely control the placement of elements on a webpage. Whether we
+            are using static, relative, absolute, or fixed positioning, each
+            option has its unique use cases and implications for the layout.
+            <br />
+          </p>
+          <p>
+            To sum up, this CSS basic technical documentation covered key
+            principles, including CSS selectors, the box model, layouts. Armed
+            with this foundational knowledge, we can create well-styled and
+            responsive web content. Further exploration on Mozilla Developer
+            Network (MDN) offers in-depth insights for those seeking additional
+            information.
+          </p>
+        </div>
+      </section>
+
+      <section class="main-section" id="7._Reference">
+        <header>7. Reference</header>
+        <div class="content">
+          <ol>
+            <li>
+              <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+                >MDN Docs</a
+              >
+            </li>
+            <li><a href="https://en.wikipedia.org/wiki/CSS">Wikipedia</a></li>
+          </ol>
+        </div>
+      </section>
+      <div class="footer"></div>
+    </main>
+  </body>
+</html>
